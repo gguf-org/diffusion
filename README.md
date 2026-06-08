@@ -23,7 +23,7 @@ Clone with submodules:
 
 ```sh
 git clone https://github.com/gguf-org/diffusion
-cd gguf-diffusion
+cd diffusion
 ```
 
 Build a CPU-only release:
