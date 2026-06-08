@@ -1,4 +1,4 @@
-# gguf-diffusion
+# diffusion
 
 `gguf-diffusion` or `gguf-diffusion.cpp` is a C/C++ inference library and set of example applications for diffusion models backed by GGML. It focuses on local image and video generation, GGUF/safetensors model loading, quantized weights, mixed backend placement, and practical command-line or HTTP server workflows.
 
@@ -22,8 +22,8 @@ The project builds a reusable library, `gguf-diffusion`, plus examples:
 Clone with submodules:
 
 ```sh
-git clone https://github.com/gguf-org/gguf-diffusion
-cd gguf-diffusion
+git clone https://github.com/gguf-org/diffusion
+cd diffusion
 ```
 
 Build a CPU-only release:
@@ -65,8 +65,6 @@ Run the server:
   --listen-port 1234
 ```
 
-See `docs/build.md`, `examples/cli/README.md`, and `examples/server/README.md` for complete option coverage.
-
 ## Build Options
 
 Common CMake options:
@@ -88,8 +86,6 @@ Common CMake options:
 | `SD_OPENCL` | Enable the GGML OpenCL backend. |
 | `SD_SYCL` | Enable the GGML SYCL backend. |
 | `SD_MUSA` | Enable the GGML MUSA backend. |
-
-Backend-specific setup notes are in `docs/build.md`.
 
 ## Project Structure
 
@@ -118,7 +114,6 @@ Backend-specific setup notes are in `docs/build.md`.
 |   |-- common/                 # shared CLI/server argument, logging, media helpers
 |   |-- cli/                    # sd-cli application
 |   `-- server/                 # sd-server HTTP APIs and async job runtime
-|-- docs/                       # model-family, backend, build, cache, and workflow docs
 |-- ggml/                       # bundled GGML backend library
 `-- thirdparty/                 # zip, stb, httplib, JSON, WebP/WebM, tokenizer deps
 ```
@@ -210,8 +205,6 @@ sd-cli \
 - `--offload-to-cpu` is equivalent to CPU parameter placement when no explicit parameter backend is set.
 - `--max-vram` enables graph-cut segmented execution for constrained VRAM scenarios.
 
-See `docs/backend.md` for exact syntax and module names.
-
 ## Server APIs
 
 `sd-server` exposes three API families:
@@ -221,16 +214,6 @@ See `docs/backend.md` for exact syntax and module names.
 - Native async `sdcpp` endpoints under `/sdcpp/v1/...`
 
 The native API is documented in `examples/server/api.md`. The root path `/` returns a plain server status page unless `--serve-html-path <index.html>` is provided.
-
-## Model and Workflow Documentation
-
-Detailed docs are organized by model family and feature:
-
-- Build and backend setup: `docs/build.md`, `docs/backend.md`, `docs/hipBLAS_on_Windows.md`
-- Model formats and conversion: `docs/model_config.md`, `docs/quantization_and_gguf.md`
-- Core model families: `docs/sd.md`, `docs/sd3.md`, `docs/flux.md`, `docs/flux2.md`, `docs/wan.md`, `docs/qwen_image.md`, `docs/z_image.md`
-- Feature workflows: `docs/lora.md`, `docs/caching.md`, `docs/esrgan.md`, `docs/photo_maker.md`, `docs/kontext.md`, `docs/lcm.md`
-- Performance notes: `docs/performance.md`
 
 ## Public API Sketch
 
