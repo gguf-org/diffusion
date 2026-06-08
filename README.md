@@ -22,8 +22,8 @@ The project builds a reusable library, `gguf-diffusion`, plus examples:
 Clone with submodules:
 
 ```sh
-git clone --recursive https://github.com/leejet/gguf-diffusion.cpp
-cd gguf-diffusion.cpp
+git clone https://github.com/gguf-org/gguf-diffusion
+cd gguf-diffusion
 ```
 
 Build a CPU-only release:
