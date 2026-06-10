@@ -10,7 +10,7 @@ The project builds a reusable library, `gguf-diffusion`, plus examples:
 ## Features
 
 - Image generation, image-to-image, inpaint/edit-style workflows, reference-image workflows, and video generation.
-- Multiple diffusion families, including SD 1.x/2.x, SDXL, SD3, Flux, Flux.2, Chroma, Wan, Qwen Image, Z-Image, HiDream, LTX, and others documented under `docs/`.
+- Multiple diffusion families, including SD 1.x/2.x, SDXL, SD3, Flux, Flux.2, Chroma, Wan, Qwen Image, Z-Image, HiDream, LTX, and others.
 - GGML execution backends: CPU by default, with optional CUDA, HIP/ROCm, Metal, Vulkan, OpenCL, SYCL, and MUSA builds.
 - GGUF and safetensors-oriented model loading and conversion utilities.
 - Quantized weight types through GGML, including common `q4_*`, `q5_*`, `q8_*`, `iq*`, BF16, and related formats.
