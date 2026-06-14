@@ -239,7 +239,7 @@ Applications should check return values, own and free generated images according
 - Keep model-family-specific code close to the existing runner folders under `src/model/`.
 - Use `format-code.sh` before submitting broad formatting-sensitive changes.
 
-## Acknowledgments/references
+## Acknowledgment/references
 
 stable-diffusion.cpp (MIT License) [leejet](https://github.com/leejet/stable-diffusion.cpp) and llama.cpp (MIT License) [ggml](https://github.com/ggml-org/ggml)
 
@@ -248,6 +248,8 @@ stable-diffusion.cpp (MIT License) [leejet](https://github.com/leejet/stable-dif
 The codebase is built from various sources and the *third party or vendor package(s) might use different license(s)
 - MIT License [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp/blob/master/LICENSE)
 - MIT License [ggml](https://github.com/ggml-org/ggml/blob/master/LICENSE) or refer to the copy inside ggml folder, etc.
+
+*please refer to the individual license inside folder/package
 
 Other than that, all other contribution/change(s) are under the MIT License stated/found in the repository.
 
