@@ -5,7 +5,6 @@
 The project builds a reusable library, `gguf-diffusion`, plus examples:
 
 - `sd-cli`: command-line generation, conversion, upscaling, metadata inspection, and preview output.
-- `sd-server`: HTTP server exposing OpenAI-compatible, Stable Diffusion WebUI-compatible, and native `sdcpp` APIs.
 
 ## Features
 
@@ -52,17 +51,6 @@ Run the CLI:
   --height 1024 \
   --steps 30 \
   --output output.png
-```
-
-Run the server:
-
-```sh
-./build/bin/sd-server \
-  --diffusion-model ./models/diffusion_model.gguf \
-  --vae ./models/vae.gguf \
-  --t5xxl ./models/text_encoder.gguf \
-  --listen-ip 127.0.0.1 \
-  --listen-port 1234
 ```
 
 ## Build Options
@@ -259,7 +247,7 @@ stable-diffusion.cpp (MIT License) [leejet](https://github.com/leejet/stable-dif
 
 The codebase is built from various sources and the *third party or vendor package(s) might use different license(s)
 - MIT License [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp/blob/master/LICENSE)
-- MIT License [ggml](https://github.com/ggml-org/ggml/blob/master/LICENSE) or the copy inside ggmal folder, etc.
+- MIT License [ggml](https://github.com/ggml-org/ggml/blob/master/LICENSE) or refer to the copy inside ggml folder, etc.
 
 ## License
 
