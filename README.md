@@ -255,6 +255,10 @@ Applications should check return values, own and free generated images according
 
 stable-diffusion.cpp (MIT License) [leejet](https://github.com/leejet/stable-diffusion.cpp) and llama.cpp (MIT License) [ggml](https://github.com/ggml-org/ggml)
 
+Note: the codebase is built from various sources and the *third party or vendor package(s) might use different license(s)
+- MIT License [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp/blob/master/LICENSE)
+- MIT License [ggml](https://github.com/ggml-org/ggml/blob/master/LICENSE) or the copy inside ggmal folder, etc.
+
 ## License
 
 See `LICENSE`.
