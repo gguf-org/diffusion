@@ -249,6 +249,8 @@ The codebase is built from various sources and the *third party or vendor packag
 - MIT License [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp/blob/master/LICENSE)
 - MIT License [ggml](https://github.com/ggml-org/ggml/blob/master/LICENSE) or refer to the copy inside ggml folder, etc.
 
+Other than that, all other contribution/change(s) are under the MIT License stated/found in the repository.
+
 ## License
 
 See `LICENSE`.
