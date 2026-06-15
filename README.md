@@ -6,6 +6,9 @@ The project builds a reusable library, `gguf-diffusion`, plus examples:
 
 - `sd-cli`: command-line generation, conversion, upscaling, metadata inspection, and preview output.
 
+![screenshot](https://raw.githubusercontent.com/gguf-org/gguf-desktop/master/demo7.gif)
+*currently, it serves as engine of diffusion inside desktop (see demo above)
+
 ## Features
 
 - Image generation, image-to-image, inpaint/edit-style workflows, reference-image workflows, and video generation.
