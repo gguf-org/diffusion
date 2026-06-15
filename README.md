@@ -2,10 +2,6 @@
 
 `gguf-diffusion` or `gguf-diffusion.cpp` is a C/C++ inference library and set of example applications for diffusion models backed by GGML. It focuses on local image and video generation, GGUF/safetensors model loading, quantized weights, mixed backend placement, and practical command-line or HTTP server workflows.
 
-The project builds a reusable library, `gguf-diffusion`, plus examples:
-
-- `sd-cli`: command-line generation, conversion, upscaling, metadata inspection, and preview output.
-
 ![screenshot](https://raw.githubusercontent.com/gguf-org/gguf-desktop/master/demo7.gif)
 *currently, it serves as engine of diffusion inside desktop (see demo above)
 
